@@ -51,7 +51,7 @@ I have managed to draw up a ERD which I think is correct, I used Lucid Chart whi
         "Orthopaedics",
         ],
         "biography": "American comedian, actress, writer, producer, and television host."
-      },
+      }
     ]
   }
 }
