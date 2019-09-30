@@ -9,9 +9,9 @@ I worked with data models briefly quite early on in the Makers course, so I feel
   - Entity Relationship Diagram
     - ERD cardinality is the style of notation used to declare relationship - one, many etc.
 
-Here is my first attempt at an Entity Relationship Diagram (ERD). I gave the team an id as I feel like would a useful feature further down the line. 
+Here is my first attempt at an Entity Relationship Diagram (ERD). I gave the team an id as I feel like would a useful feature further down the line.
 
-![screenshot of ERD 1](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![screenshot of ERD 1](https://github.com/josephtownshend/myrecovery_tech_test/blob/master/Images/ERD_1.jpg)
 
 
 
