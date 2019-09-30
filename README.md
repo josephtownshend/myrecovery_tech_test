@@ -11,7 +11,7 @@ Notes...
     - ERD cardinality is the style of notation used to declare relationship - one, many etc.
 
 I have managed to draw up a ERD which I think is correct, I used Lucid Chart which is a great tool for this. I think from here I will try and workout the JSON data structure.
-
+``` json
 {
   "team": {
     "id": 1234,
@@ -55,7 +55,7 @@ I have managed to draw up a ERD which I think is correct, I used Lucid Chart whi
     ]
   }
 }
-
+```
 
 ### Data model
 
