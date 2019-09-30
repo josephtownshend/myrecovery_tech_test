@@ -7,6 +7,13 @@ I worked with data models briefly quite early on in the Makers course, so I feel
 
 - A data model is a logical representation of how the data will flow between different data entities and the relationships between them.
   - Entity Relationship Diagram
+    - ERD cardinality is the style of notation used to declare relationship - one, many etc.
+
+Here is my first attempt at an Entity Relationship Diagram (ERD). I gave the team an id as I feel like would a useful feature further down the line. 
+
+![screenshot of ERD 1](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+
+
 
 ### Team Logic
 
