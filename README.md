@@ -7,3 +7,19 @@ I worked with data models briefly quite early on in the Makers course, so I feel
 
 - A data model is a logical representation of how the data will flow between different data entities and the relationships between them.
   - Entity Relationship Diagram
+
+  * Surgeon A
+    - Nurse A
+    - Nurse B
+    - Admin Assistant A
+
+  * Surgeon B
+    - Nurse B
+    - Nurse C
+  - Admin Assistant B
+
+The logic for a team is as follows:
+* There must be at least one surgeon and one nurse in a team
+* There must be at most one surgeon and one admin assistant in a team
+* Nurses and admin assistants can work in up to three teams
+* Surgeons can only work in one team
