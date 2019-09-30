@@ -10,7 +10,28 @@ Notes...
   - Entity Relationship Diagram
     - ERD cardinality is the style of notation used to declare relationship - one, many etc.
 
-I have managed to draw up a ERD which I think is correct, I used Lucid Chart which is a great tool for this. I think from here I will try and workout the JSON data structure. 
+I have managed to draw up a ERD which I think is correct, I used Lucid Chart which is a great tool for this. I think from here I will try and workout the JSON data structure.
+
+{
+  "team": {
+    "id": 1234,
+    "members": [
+      {  
+        "profilePicture": https://www.profilePictures.com,
+        "firstName": "Mary",
+        "lastName": "Edwards Walker",
+        "type": "Surgeon",
+        "onLeave": true,
+        "specialities": [
+        "Orthopaedics",
+        "Renal"
+        ],
+        "biography": "American abolitionist, prohibitionist, prisoner of war and surgeon. She is the only woman to ever receive the Medal of Honour."
+      }
+    ]
+  }
+}
+
 
 ### Data model
 
