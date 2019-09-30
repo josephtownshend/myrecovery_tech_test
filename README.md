@@ -26,7 +26,7 @@ I have managed to draw up a ERD which I think is correct, I used Lucid Chart whi
         "Orthopaedics",
         "Renal"
         ],
-        "biography": "American abolitionist, prohibitionist, prisoner of war and surgeon. She is the only woman to ever receive the Medal of Honour."
+        "biography": "American abolitionist, prohibitionist, prisoner of war and surgeon."
       },
       {  
         "profilePicture": "https://www.profilePictures.com/florence-nightingale",
