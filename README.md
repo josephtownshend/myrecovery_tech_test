@@ -17,7 +17,7 @@ I have managed to draw up a ERD which I think is correct, I used Lucid Chart whi
     "id": 1234,
     "members": [
       {  
-        "profilePicture": https://www.profilePictures.com/mary-edwards-walker,
+        "profilePicture": "https://www.profilePictures.com/mary-edwards-walker",
         "firstName": "Mary",
         "lastName": "Edwards Walker",
         "type": "Surgeon",
@@ -29,7 +29,7 @@ I have managed to draw up a ERD which I think is correct, I used Lucid Chart whi
         "biography": "American abolitionist, prohibitionist, prisoner of war and surgeon. She is the only woman to ever receive the Medal of Honour."
       },
       {  
-        "profilePicture": https://www.profilePictures.com/florence-nightingale,
+        "profilePicture": "https://www.profilePictures.com/florence-nightingale",
         "firstName": "Florence",
         "lastName": "Nightingale",
         "type": "Nurse",
@@ -42,7 +42,7 @@ I have managed to draw up a ERD which I think is correct, I used Lucid Chart whi
         "biography": "English social reformer and statistician, and the founder of modern nursing."
       },
       {  
-        "profilePicture": https://www.profilePictures.com/joan-rivers,
+        "profilePicture": "https://www.profilePictures.com/joan-rivers",
         "firstName": "Joan",
         "lastName": "Rivers",
         "type": "Admin Assistant",
