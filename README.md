@@ -1,19 +1,22 @@
 # myrecovery_tech_test
 
 
-### Data model
+### Strategy
 
 I worked with data models briefly quite early on in the Makers course, so I feel a little unfamiliar with them at the moment. I am going to spend some time researching data models and from there start to draw up a diagram.
 
+Notes...
 - A data model is a logical representation of how the data will flow between different data entities and the relationships between them.
   - Entity Relationship Diagram
     - ERD cardinality is the style of notation used to declare relationship - one, many etc.
 
+I have managed to draw up a ERD which I think is correct, I used Lucid Chart which is a great tool for this. I think from here I will try and workout the JSON data structure. 
+
+### Data model
+
 Here is my first attempt at an Entity Relationship Diagram (ERD). I gave the team an id as I feel like would a useful feature further down the line.
 
 ![screenshot of ERD 1](https://github.com/josephtownshend/myrecovery_tech_test/blob/master/Images/ERD_1.jpg)
-
-
 
 ### Team Logic
 
