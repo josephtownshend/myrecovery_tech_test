@@ -8,6 +8,8 @@ I worked with data models briefly quite early on in the Makers course, so I feel
 - A data model is a logical representation of how the data will flow between different data entities and the relationships between them.
   - Entity Relationship Diagram
 
+### Team Logic
+
   * Surgeon A
     - Nurse A
     - Nurse B
@@ -23,3 +25,13 @@ The logic for a team is as follows:
 * There must be at most one surgeon and one admin assistant in a team
 * Nurses and admin assistants can work in up to three teams
 * Surgeons can only work in one team
+
+### Endpoint
+
+profilePicture
+firstName
+lastName
+type (e.g. Surgeon, Nurse, Admin Assistant)
+onLeave
+specialities (e.g. Orthopaedics, Renal, Paediatrics)
+biography
