@@ -21,7 +21,7 @@ I have managed to draw up a ERD which I think is correct, I used Lucid Chart whi
         "firstName": "Mary",
         "lastName": "Edwards Walker",
         "type": "Surgeon",
-        "onLeave": true,
+        "onLeave": false,
         "specialities": [
         "Orthopaedics",
         "Renal"
@@ -40,6 +40,17 @@ I have managed to draw up a ERD which I think is correct, I used Lucid Chart whi
         "Paediatrics"
         ],
         "biography": "English social reformer and statistician, and the founder of modern nursing."
+      },
+      {  
+        "profilePicture": https://www.profilePictures.com/joan-rivers,
+        "firstName": "Joan",
+        "lastName": "Rivers",
+        "type": "Admin Assistant",
+        "onLeave": false,
+        "specialities": [
+        "Orthopaedics",
+        ],
+        "biography": "American comedian, actress, writer, producer, and television host."
       },
     ]
   }
