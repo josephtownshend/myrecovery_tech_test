@@ -46,7 +46,7 @@ def get_team():
     return jsonify({'team': team})
 
 @app.route('/myrecovery/api/v1.0/team/firstName/<string:firstNameInput>', methods=['GET'])
-def get_name(firstNameInput):
+def get_firstName(firstNameInput):
     name = [name for name in team if name['firstName'] == firstNameInput]
     if len(name) == 0:
         abort(404)
