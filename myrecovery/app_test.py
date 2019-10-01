@@ -16,6 +16,30 @@ team = [
     "Renal"
     ],
     "biography": "American abolitionist, prohibitionist, prisoner of war and surgeon."
+  },
+  {
+    "profilePicture": "https://www.profilePictures.com/florence-nightingale",
+    "firstName": "Florence",
+    "lastName": "Nightingale",
+    "type": "Nurse",
+    "onLeave": "false",
+    "specialities": [
+    "Orthopaedics",
+    "Renal",
+    "Paediatrics"
+    ],
+    "biography": "English social reformer and statistician, and the founder of modern nursing."
+  },
+  {
+    "profilePicture": "https://www.profilePictures.com/joan-rivers",
+    "firstName": "Joan",
+    "lastName": "Rivers",
+    "type": "Admin Assistant",
+    "onLeave": "false",
+    "specialities": [
+    "Orthopaedics",
+    ],
+    "biography": "American comedian, actress, writer, producer, and television host."
   }
 ]
 
