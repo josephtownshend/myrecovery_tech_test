@@ -79,22 +79,17 @@ As I already had `virtualenv` installed on my machine I ran...
 `$ virtualenv myrecovery`
 `$ flask/bin/pip install flask`
 
-This created a myrecovery virtual environment, which I then installed flask in.
+This created a myrecovery virtual environment, which I then installed flask in. From here I added a simple app.py file which returns "Hello, World!".
 
-From here I added a simple app.py file which returns "Hello, World!".
 To run the file I used...
 
-`$ export FLASK_APP=app.py`
-`$ flask run`
-` * Running on http://127.0.0.1:5000/`
+```shell
+$ export FLASK_APP=app.py
+$ flask run
+* Running on http://127.0.0.1:5000/
+```
 
-I can now start to create a database of `team` in memory, just a simple array of dictionaries.
-
-I removed `id` and `members` from my JSON data for the moment just to simplify the request. I'm not sure if I really need them anyway.
-
-I created the `get_team` function which is associated with the `/myrecovery/api/v1.0/team` URI.
-
-If I start the web service by running app.py, and open a new console window and run...
+I can now start to create a database of `team` in memory, just a simple array of dictionaries. I removed `id` and `members` from my JSON data for the moment just to simplify the request. I'm not sure if I really need them anyway. I created the `get_team` function which is associated with the `/myrecovery/api/v1.0/team` URI. If I start the web service by running `app.py`, and open a new console window and run...
 
 `$ curl -i http://localhost:5000/myrecovery/api/v1.0/team`
 
@@ -112,7 +107,7 @@ Date: Tue, 01 Oct 2019 10:11:42 GMT
 
 Which from the header we can see is JSON data however the formatting is not great.
 
-I've installed `curlson`
+I've found and installed `curlson`
 
 so now I can run...
 
@@ -120,11 +115,7 @@ so now I can run...
 
 and it returns a prettified JSON output.
 
-One note on the JSON data is that I had to change the `onLeave` booleans to a string as it was throwing errors. I'm not sure why this is happening but I'll come back to it if I have time.
-
-At this point I want to try and expose more endpoints, I'm not really sure how to go about this so I'm going to first try and just create a function to expose the {'firstName': 'Mary'}.
-
-I have written a basic function following the format of the `def_team` function that returns {'firstName': 'Mary'}
+One note on the JSON data is that I had to change the `onLeave` booleans to a string as it was throwing errors. I'm not sure why this is happening but I'll come back to it if I have time. At this point I want to try and expose more endpoints, I'm not really sure how to go about this so I'm going to first try and just create a function to expose the `{'firstName': 'Mary'}`. I have written a basic function following the format of the `def_team` function that returns `{'firstName': 'Mary'}`
 
 ![screenshot of firstName JSON output](https://github.com/josephtownshend/myrecovery_tech_test/blob/master/Images/firstName.jpg)
 
