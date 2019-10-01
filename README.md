@@ -57,6 +57,16 @@ I have managed to draw up a ERD which I think is correct, I used Lucid Chart whi
 }
 ```
 
+At this point I want to start to look at Django and Flask, and make a decision which one to use. Flask might be the better option for me at the moment as it is a lighter weight framework than Django, so its simplicity might be more useful for this exercise. 
+
+As I already had `virtualenv` installed on my machine I ran...
+
+`$ virtualenv flask`
+`$ flask/bin/pip install flask`
+
+
+
+
 ### Data model
 
 Here is my first attempt at an Entity Relationship Diagram (ERD). I gave the team an id as I feel like would a useful feature further down the line.
