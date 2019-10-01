@@ -1,9 +1,10 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, abort
 
 app = Flask(__name__)
 
 team = [
   {
+    "id": 1,
     "profilePicture": "https://www.profilePictures.com/mary-edwards-walker",
     "firstName": "Mary",
     "lastName": "Edwards Walker",
@@ -16,6 +17,7 @@ team = [
     "biography": "American abolitionist, prohibitionist, prisoner of war and surgeon."
   },
   {
+    "id": 2,
     "profilePicture": "https://www.profilePictures.com/florence-nightingale",
     "firstName": "Florence",
     "lastName": "Nightingale",
@@ -29,6 +31,7 @@ team = [
     "biography": "English social reformer and statistician, and the founder of modern nursing."
   },
   {
+    "id": 3,
     "profilePicture": "https://www.profilePictures.com/joan-rivers",
     "firstName": "Joan",
     "lastName": "Rivers",
@@ -45,9 +48,12 @@ team = [
 def get_team():
     return jsonify({'team': team})
 
-@app.route('/myrecovery/api/v1.0/team/firstName/mary', methods=['GET'])
-def get_mary():
-    return jsonify({'firstName': 'Mary'})
+@app.route('/myrecovery/api/v1.0/team/<int:person_id>', methods=['GET'])
+def get_name(person_id):
+    name = [name for name in team if name['id'] == person_id]
+    if len(name) == 0:
+        abort(404)
+    return jsonify({'name': name[0]})
 
 if __name__ == '__main__':
     app.run(debug=True)

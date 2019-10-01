@@ -2,9 +2,9 @@
 
 ### Strategy
 
-I am in fairly unfamiliar terriorty with this test so I think my strategy is going to be to spend a good amount of time researching so I can understand what I am being asked to do as best as possible. From there I will work on the data model and the JSON which I think I can do quite easily - though again I'm not very familiar with this. Once I get this pinned down I'll move on to the framework and hopefully starting to write some code. 
+I am in fairly unfamiliar terriorty with this test so I think my strategy is going to be to spend a good amount of time researching so I can understand what I am being asked to do as best as possible. From there I will work on the data model and the JSON which I think I can do quite easily - though again I'm not very familiar with this. Once I get this pinned down I'll move on to the framework and hopefully starting to write some code.
 
-Despite having quite little experience with Python / Flask & Django I'm quite excited by this test as a learning experience and also very keen to learn more about data models and JSON. 
+Despite having quite little experience with Python / Flask & Django I'm quite excited by this test as a learning experience and also very keen to learn more about data models and JSON.
 
 ---------
 
@@ -23,7 +23,7 @@ Notes...
 
 #### JSON data structure
 
-Pretty happy with this section, I think the structure is accurate and is logical. 
+Pretty happy with this section, I think the structure is accurate and is logical.
 
 ``` json
 {
@@ -121,6 +121,39 @@ One note on the JSON data is that I had to change the `onLeave` booleans to a st
 
 ![screenshot of firstName JSON output](https://github.com/josephtownshend/myrecovery_tech_test/blob/master/Images/firstName.jpg)
 
+#### Next steps...
+
+I felt a little bit stuck at this point, so I decided in order to make some progress with the logic I would add an `'id':int` to each person. This allowed me to get unblocked and create a function that takes a `person_id` and creates a dynamic endpoint and returns the right person. Whilst this isn't part of the test - I do feel like it's a good step in the right direction.
+
+`$ curljson -i http://localhost:5000/myrecovery/api/v1.0/team/1`
+
+outputs...
+
+```json
+HTTP/1.0 200 OK
+Content-Type: application/json
+Content-Length: 293
+Server: Werkzeug/0.16.0 Python/3.7.4
+Date: Tue, 01 Oct 2019 13:59:07 GMT
+
+{
+    "name": {
+        "biography": "American abolitionist, prohibitionist, prisoner of war and surgeon.",
+        "firstName": "Mary",
+        "id": 1,
+        "lastName": "Edwards Walker",
+        "onLeave": "false",
+        "profilePicture": "https://www.profilePictures.com/mary-edwards-walker",
+        "specialities": [
+            "Orthopaedics",
+            "Renal"
+        ],
+        "type": "Surgeon"
+    }
+}
+```
+
+-------
 
 ### Team Logic
 
