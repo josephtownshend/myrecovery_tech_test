@@ -119,7 +119,7 @@ One note on the JSON data is that I had to change the `onLeave` booleans to a st
 
 #### Next steps...
 
-I felt a little bit stuck at this point, so I decided in order to make some progress with the logic I would add an `'id':int` to each person. This allowed me to get unblocked and create a function that takes a `person_id` and creates a dynamic endpoint and returns the right person. Whilst this isn't part of the test - I do feel like it's a good step in the right direction.
+I felt a little bit stuck at this point, so I decided in order to make some progress with the logic I would add an `'id':int` to each person. This allowed me to get unblocked and create a function that takes a `person_id` and creates a dynamic endpoint and returns the right person. Whilst this isn't part of the test - I do feel like it's a good step in the right direction. It will also return a 404 error if the `id` isn't found in the `name` array. After testing the 404 error I decided to try and get it to return a more useful error - I created a `not_found` function to do this and now when it can't find the inputted `id` it will output a JSON error message.  
 
 `$ curljson -i http://localhost:5000/myrecovery/api/v1.0/team/id/1`
 
@@ -146,6 +146,14 @@ Date: Tue, 01 Oct 2019 13:59:07 GMT
         ],
         "type": "Surgeon"
     }
+}
+```
+
+or
+
+```json
+{
+    "error": "Not found"
 }
 ```
 
