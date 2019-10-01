@@ -48,7 +48,7 @@ team = [
 def get_team():
     return jsonify({'team': team})
 
-@app.route('/myrecovery/api/v1.0/team/<int:person_id>', methods=['GET'])
+@app.route('/myrecovery/api/v1.0/team/id/<int:person_id>', methods=['GET'])
 def get_name(person_id):
     name = [name for name in team if name['id'] == person_id]
     if len(name) == 0:

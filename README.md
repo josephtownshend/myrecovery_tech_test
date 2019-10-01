@@ -97,7 +97,7 @@ I can now start to create a database of `team` in memory, just a simple array of
 
 we get...
 
-```
+```json
 HTTP/1.0 200 OK
 Content-Type: application/json
 Content-Length: 848
@@ -125,7 +125,7 @@ One note on the JSON data is that I had to change the `onLeave` booleans to a st
 
 I felt a little bit stuck at this point, so I decided in order to make some progress with the logic I would add an `'id':int` to each person. This allowed me to get unblocked and create a function that takes a `person_id` and creates a dynamic endpoint and returns the right person. Whilst this isn't part of the test - I do feel like it's a good step in the right direction.
 
-`$ curljson -i http://localhost:5000/myrecovery/api/v1.0/team/1`
+`$ curljson -i http://localhost:5000/myrecovery/api/v1.0/team/id/1`
 
 outputs...
 
