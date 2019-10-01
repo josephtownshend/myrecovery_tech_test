@@ -170,6 +170,10 @@ or
 
 I can now refactor my code by removing the `id` and instead get it to input and output the `firstName`. This seems to be working fine so from here I think I might now need to try and figure out how to make the entire URI dynamic - in the same way that I did for firstName. I'm going to spend a bit of time thinking about this as I think it sounds quite complex.
 
+After spending some time researching I found flask-restful which looks like an interesting option, it can really help to tidy up the code but I think it can also be useful in making the URIs dynamic. I'm going to set up a test app and see if I can make any progress using that. 
+
+
+
 -------
 
 ### Team Logic
