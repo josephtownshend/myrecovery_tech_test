@@ -76,8 +76,10 @@ At this point I want to start to look at Django and Flask, and make a decision w
 I need to set up a virtual environment for the app...
 As I already had `virtualenv` installed on my machine I ran...
 
-`$ virtualenv myrecovery`
-`$ flask/bin/pip install flask`
+```shell
+$ virtualenv myrecovery
+$ flask/bin/pip install flask
+```
 
 This created a myrecovery virtual environment, which I then installed flask in. From here I added a simple app.py file which returns "Hello, World!".
 
@@ -111,7 +113,7 @@ I've found and installed `curlson`
 
 so now I can run...
 
-`curlson - v http://localhost:5000/myrecovery/api/v1.0/team`
+`$ curlson - v http://localhost:5000/myrecovery/api/v1.0/team`
 
 and it returns a prettified JSON output.
 
