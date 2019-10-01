@@ -45,5 +45,9 @@ team = [
 def get_team():
     return jsonify({'team': team})
 
+@app.route('/myrecovery/api/v1.0/team/firstName/mary', methods=['GET'])
+def get_mary():
+    return jsonify({'firstName': 'Mary'})
+
 if __name__ == '__main__':
     app.run(debug=True)
