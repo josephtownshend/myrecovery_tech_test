@@ -92,7 +92,24 @@ Date: Tue, 01 Oct 2019 10:11:42 GMT
 {"team":[{"biography":"American abolitionist, prohibitionist, prisoner of war and surgeon.","firstName":"Mary","lastName":"Edwards Walker","onLeave":"false","profilePicture":"https://www.profilePictures.com/mary-edwards-walker","specialities":["Orthopaedics","Renal"],"type":"Surgeon"},{"biography":"English social reformer and statistician, and the founder of modern nursing.","firstName":"Florence","lastName":"Nightingale","onLeave":"false","profilePicture":"https://www.profilePictures.com/florence-nightingale","specialities":["Orthopaedics","Renal","Paediatrics"],"type":"Nurse"},{"biography":"American comedian, actress, writer, producer, and television host.","firstName":"Joan","lastName":"Rivers","onLeave":"false","profilePicture":"https://www.profilePictures.com/joan-rivers","specialities":["Orthopaedics"],"type":"Admin Assistant"}]}
 ```
 
-Which from the header we can see is JSON data however the formatting is not right. I'm not sure why this is happeneing.
+Which from the header we can see is JSON data however the formatting is not great.
+
+I've installed `curlson`
+
+so now I can run...
+
+`curlson - v http://localhost:5000/myrecovery/api/v1.0/team`
+
+and it returns a prettified JSON output.
+
+One note on the JSON data is that I had to change the `onLeave` booleans to a string as it was throwing errors. I'm not sure why this is happening but I'll come back to it if I have time.
+
+
+At this point I want to try and expose more endpoints, I'm not really sure how to go about this so I'm going to first try and just create a function to expose the {'firstName': 'Mary'}.
+
+I have written a basic function following the format of the `def_team` function that returns {'firstName': 'Mary'}
+
+![screenshot of firstName JSON output](https://github.com/josephtownshend/myrecovery_tech_test/blob/master/Images/firstName.jpg)
 
 
 
