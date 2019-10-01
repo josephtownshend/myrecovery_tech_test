@@ -157,7 +157,7 @@ or
 }
 ```
 
-I can now refactor my code by removing the 'id' and instead get it to input and output the firstName. This seems to be working fine so from here I think I can make a function for each endpoint that can output the corresponding JSON data. 
+I can now refactor my code by removing the `id` and instead get it to input and output the `firstName`. This seems to be working fine so from here I think I might now need to try and figure out how to make the entire URI dynamic - in the same way that I did for firstName. I'm going to spend a bit of time thinking about this as I think it sounds quite complex. 
 
 -------
 
