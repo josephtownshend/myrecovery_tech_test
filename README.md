@@ -115,11 +115,22 @@ and it returns a prettified JSON output.
 
 One note on the JSON data is that I had to change the `onLeave` booleans to a string as it was throwing errors. I'm not sure why this is happening but I'll come back to it if I have time. At this point I want to try and expose more endpoints, I'm not really sure how to go about this so I'm going to first try and just create a function to expose the `{'firstName': 'Mary'}`. I have written a basic function following the format of the `def_team` function that returns `{'firstName': 'Mary'}`
 
-![screenshot of firstName JSON output](https://github.com/josephtownshend/myrecovery_tech_test/blob/master/Images/firstName.jpg)
+
+```json
+HTTP/1.0 200 OK
+Content-Type: application/json
+Content-Length: 21
+Server: Werkzeug/0.16.0 Python/3.7.4
+Date: Tue, 01 Oct 2019 11:43:53 GMT
+
+{
+    "firstName": "Mary"
+}
+```
 
 #### Next steps...
 
-I felt a little bit stuck at this point, so I decided in order to make some progress with the logic I would add an `'id':int` to each person. This allowed me to use a todo list tutorial and get me unblocked. I created a function that takes a `person_id` and creates a dynamic endpoint and returns the right person. Whilst this isn't part of the test - I do feel like it's a good step in the right direction. It will also return a 404 error if the `id` isn't found in the `name` array. After testing the 404 error I decided to try and get it to return a more useful error - I created a `not_found` function to do this and now when it can't find the inputted `id` it will output a JSON error message.  
+I felt a little bit stuck at this point, so I decided in order to make some progress with the logic I added an `'id':int` to each person. This allowed me to use a todo list tutorial and which might help me get unblocked. I created a function that takes a `person_id` and creates a dynamic endpoint that can output the corresponding person. Whilst this isn't part of the test - I do feel like it's a good step in the right direction. It will also return a `404 error` if the `id` isn't found in the `name` array. After testing the `404 error` I decided to try and get it to output a more useful error - I created a `not_found` function to do this and now when it can't find the inputted `id` it will output a JSON error message.  
 
 `$ curljson -i http://localhost:5000/myrecovery/api/v1.0/team/id/1`
 
@@ -157,7 +168,7 @@ or
 }
 ```
 
-I can now refactor my code by removing the `id` and instead get it to input and output the `firstName`. This seems to be working fine so from here I think I might now need to try and figure out how to make the entire URI dynamic - in the same way that I did for firstName. I'm going to spend a bit of time thinking about this as I think it sounds quite complex. 
+I can now refactor my code by removing the `id` and instead get it to input and output the `firstName`. This seems to be working fine so from here I think I might now need to try and figure out how to make the entire URI dynamic - in the same way that I did for firstName. I'm going to spend a bit of time thinking about this as I think it sounds quite complex.
 
 -------
 
