@@ -107,13 +107,9 @@ Date: Tue, 01 Oct 2019 10:11:42 GMT
 {"team":[{"biography":"American abolitionist, prohibitionist, prisoner of war and surgeon.","firstName":"Mary","lastName":"Edwards Walker","onLeave":"false","profilePicture":"https://www.profilePictures.com/mary-edwards-walker","specialities":["Orthopaedics","Renal"],"type":"Surgeon"},{"biography":"English social reformer and statistician, and the founder of modern nursing.","firstName":"Florence","lastName":"Nightingale","onLeave":"false","profilePicture":"https://www.profilePictures.com/florence-nightingale","specialities":["Orthopaedics","Renal","Paediatrics"],"type":"Nurse"},{"biography":"American comedian, actress, writer, producer, and television host.","firstName":"Joan","lastName":"Rivers","onLeave":"false","profilePicture":"https://www.profilePictures.com/joan-rivers","specialities":["Orthopaedics"],"type":"Admin Assistant"}]}
 ```
 
-Which from the header we can see is JSON data however the formatting is not great.
+Which from the header we can see is JSON data however the formatting is not great. I've found and installed `curljson`, so now I can run...
 
-I've found and installed `curlson`
-
-so now I can run...
-
-`$ curlson - v http://localhost:5000/myrecovery/api/v1.0/team`
+`$ curljson - v http://localhost:5000/myrecovery/api/v1.0/team`
 
 and it returns a prettified JSON output.
 
