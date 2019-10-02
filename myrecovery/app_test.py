@@ -47,7 +47,6 @@ class Team(Resource):
     def get(self):
         return {'team': team}
 
-
 class FirstName(Resource):
     def get(self, firstNameInput):
         name = [name for name in team if name['firstName'] == firstNameInput]
@@ -76,21 +75,11 @@ class OnLeave(Resource):
             return ({'error': 'Not found'}, 404)
         return {'name': name}
 
-class Specialities(Resource):
-    def get(self, specialitiesInput):
-        name = [name for name in team if name['specialities'] == specialitiesInput]
-        if len(name) == 0:
-            return ({'error': 'Not found'}, 404)
-        return {'name': name}
-
-
-
 api.add_resource(Team, '/myrecovery/api/v1.0/team')
 api.add_resource(FirstName, '/myrecovery/api/v1.0/team/firstName/<string:firstNameInput>')
 api.add_resource(LastName, '/myrecovery/api/v1.0/team/lastName/<string:lastNameInput>')
 api.add_resource(Type, '/myrecovery/api/v1.0/team/type/<string:typeInput>')
 api.add_resource(OnLeave, '/myrecovery/api/v1.0/team/onLeave/<string:onLeaveInput>')
-api.add_resource(Specialities, '/myrecovery/api/v1.0/team/specialities/<string:specialitiesInput>')
 
 if __name__ == '__main__':
     app.run(debug=True)
