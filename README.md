@@ -1,4 +1,4 @@
-# myrecovery_tech_test
+# myrecovery tech test
 
 I have worked on two apps for this test - the first one is `app.py`, and the second is `app_test.py` which I took further and is the app I am submitting. I have kept both in the repo as `app.py` contains a majority of my working and corresponds to the readme which documents the process.
 
@@ -18,6 +18,7 @@ Note. in order to use `curljson` first
 
 `$ pip install curljson`
 
+--------
 
 ### Strategy
 
