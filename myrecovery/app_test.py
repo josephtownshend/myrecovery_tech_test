@@ -69,11 +69,20 @@ class Type(Resource):
             abort(404)
         return {'name': name}
 
+class OnLeave(Resource):
+    def get(self, onLeaveInput):
+        name = [name for name in team if name['onLeave'] == onLeaveInput]
+        if len(name) == 0:
+            abort(404)
+        return {'name': name}
+
 
 api.add_resource(Team, '/myrecovery/api/v1.0/team')
 api.add_resource(FirstName, '/myrecovery/api/v1.0/team/firstName/<string:firstNameInput>')
 api.add_resource(LastName, '/myrecovery/api/v1.0/team/lastName/<string:lastNameInput>')
 api.add_resource(Type, '/myrecovery/api/v1.0/team/type/<string:typeInput>')
+api.add_resource(OnLeave, '/myrecovery/api/v1.0/team/onLeave/<string:onLeaveInput>')
+
 
 
 
