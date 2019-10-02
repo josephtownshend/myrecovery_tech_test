@@ -1,6 +1,6 @@
 # myrecovery_tech_test
 
-I have worked on two apps for this test - the first one is `app.py` and the second is `app_test.py` which I took further and is the app I am submitting. I have kept both in the repo to document the process.
+I have worked on two apps for this test - the first one is `app.py`, and the second is `app_test.py` which I took further and is the app I am submitting. I have kept both in the repo as `app.py` contains a majority of my working and corresponds to the readme which documents the process.
 
 ### Running the app
 
@@ -12,7 +12,7 @@ and in a separate console window use...
 
 `$ curljson -i http://localhost:5000/myrecovery/team/firstName/Mary`
 
-Or any of the other endpoints I have made available.
+Or any of the other endpoints I have made available - (team, firstName, lastName, type, onLeave)
 
 Note. in order to use `curljson` first
 
@@ -196,7 +196,7 @@ After spending some time researching I found flask-restful which looks like an i
 I have spent a bit more time with my app and used flask-restful to refactor it which has made it a lot tidier. I have exposed some more of the endpoints and they are working as expected. I am going to submit the test at this point - despite it being unfinished I feel like to get any further with it I would need invest much more time. Having worked on this now for 2 days I feel like I have made some really good progress into the test - and I've certainly learnt a huge amount. In terms of what I would do if I were to move forwards...
 
 * Testing - I've used unittest before, I would need to find a mocking library for get requests.
-* Figure out how to create an error function rather than returning a message form within `get` request.
+* Figure out how to create an error function rather than returning a message from within `get` request.
 * For the endpoints that aren't single words - figure out how to deal with URLS, Arrays, Biography.
 
 In all I feel happy with my attempt, I went from not really understanding the challenge to feeling a lot more comfortable with the task in hand. I have definitely enjoyed the process, it's been great to get really out of my comfort zone and also learn a great deal about data models, JSON, Python, Flask.
