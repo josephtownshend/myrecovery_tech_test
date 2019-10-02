@@ -1,5 +1,24 @@
 # myrecovery_tech_test
 
+I have worked on two apps for this test - the first one is `app.py` and the second is `app_test.py` which I took further and is the app I am submitting. I have kept both in the repo to document the process.
+
+### Running the app
+
+To run `app_test.py` simply..
+
+`$ python app_test.py`
+
+and in a separate console window use...
+
+`$ curljson -i http://localhost:5000/myrecovery/team/firstName/Mary`
+
+Or any of the other endpoints I have made available.
+
+Note. in order to use `curljson` first
+
+`$ pip install curljson`
+
+
 ### Strategy
 
 I am in fairly unfamiliar terriorty with this test so I think my strategy is going to be to spend a good amount of time researching so I can understand what I am being asked to do as best as possible. From there I will work on the data model and the JSON which I think I can do quite easily - though again I'm not very familiar with this. Once I get this pinned down I'll move on to the framework and hopefully starting to write some code.
@@ -148,7 +167,7 @@ Date: Tue, 01 Oct 2019 13:59:07 GMT
         "biography": "American abolitionist, prohibitionist, prisoner of war and surgeon.",
         "firstName": "Mary",
         "id": 1,
-        "lastName": "Edwards Walker",
+        "lastName": "Edwards-Walker",
         "onLeave": "false",
         "profilePicture": "https://www.profilePictures.com/mary-edwards-walker",
         "specialities": [
@@ -170,9 +189,17 @@ or
 
 I can now refactor my code by removing the `id` and instead get it to input and output the `firstName`. This seems to be working fine so from here I think I might now need to try and figure out how to make the entire URI dynamic - in the same way that I did for firstName. I'm going to spend a bit of time thinking about this as I think it sounds quite complex.
 
-After spending some time researching I found flask-restful which looks like an interesting option, it can really help to tidy up the code but I think it can also be useful in making the URIs dynamic. I'm going to set up a test app and see if I can make any progress using that. 
+After spending some time researching I found flask-restful which looks like an interesting option, it can really help to tidy up the code but I think it can also be useful in making the URIs dynamic. I'm going to set up a test app and see if I can make any progress using that.
 
+#### Conclusion
 
+I have spent a bit more time with my app and used flask-restful to refactor it which has made it a lot tidier. I have exposed some more of the endpoints and they are working as expected. I am going to submit the test at this point - despite it being unfinished I feel like to get any further with it I would need invest much more time. Having worked on this now for 2 days I feel like I have made some really good progress into the test - and I've certainly learnt a huge amount. In terms of what I would do if I were to move forwards...
+
+* Testing - I've used unittest before, I would need to find a mocking library for get requests.
+* Figure out how to create an error function rather than returning a message form within `get` request.
+* For the endpoints that aren't single words - figure out how to deal with URLS, Arrays, Biography.
+
+In all I feel happy with my attempt, I went from not really understanding the challenge to feeling a lot more comfortable with the task in hand. I have definitely enjoyed the process, it's been great to get really out of my comfort zone and also learn a great deal about data models, JSON, Python, Flask.
 
 -------
 

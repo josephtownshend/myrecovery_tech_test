@@ -6,7 +6,7 @@ team = [
   {
     "profilePicture": "https://www.profilePictures.com/mary-edwards-walker",
     "firstName": "Mary",
-    "lastName": "Edwards Walker",
+    "lastName": "Edwards-Walker",
     "type": "Surgeon",
     "onLeave": "false",
     "specialities": [
@@ -32,7 +32,7 @@ team = [
     "profilePicture": "https://www.profilePictures.com/joan-rivers",
     "firstName": "Joan",
     "lastName": "Rivers",
-    "type": "Admin Assistant",
+    "type": "Admin-Assistant",
     "onLeave": "false",
     "specialities": [
     "Orthopaedics",
