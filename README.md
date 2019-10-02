@@ -33,7 +33,7 @@ I worked with data models briefly quite early on in the Makers course, so I feel
 
 Here is my first attempt at an Entity Relationship Diagram (ERD). I gave the team an id as I feel like would a useful feature further down the line. I used Lucid Chart which is a great tool for this. I think from here I will try and workout the JSON data structure.
 
-![screenshot of ERD 1](https://github.com/josephtownshend/myrecovery_tech_test/blob/master/Images/ERD_1.jpg)
+![screenshot of ERD 1](https://github.com/josephtownshend/myrecovery_tech_test/blob/master/Images/ERD_1.1.jpg)
 
 Notes...
 - A data model is a logical representation of how the data will flow between different data entities and the relationships between them.
