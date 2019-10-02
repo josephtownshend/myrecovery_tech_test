@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, make_response
 from flask_restful import Resource, Api
 
 app = Flask(__name__)
@@ -52,29 +52,37 @@ class FirstName(Resource):
     def get(self, firstNameInput):
         name = [name for name in team if name['firstName'] == firstNameInput]
         if len(name) == 0:
-            abort(404)
+            return ({'error': 'Not found'}, 404)
         return {'name': name}
 
 class LastName(Resource):
     def get(self, lastNameInput):
         name = [name for name in team if name['lastName'] == lastNameInput]
         if len(name) == 0:
-            abort(404)
+            return ({'error': 'Not found'}, 404)
         return {'name': name}
 
 class Type(Resource):
     def get(self, typeInput):
         name = [name for name in team if name['type'] == typeInput]
         if len(name) == 0:
-            abort(404)
+            return ({'error': 'Not found'}, 404)
         return {'name': name}
 
 class OnLeave(Resource):
     def get(self, onLeaveInput):
         name = [name for name in team if name['onLeave'] == onLeaveInput]
         if len(name) == 0:
-            abort(404)
+            return ({'error': 'Not found'}, 404)
         return {'name': name}
+
+class Specialities(Resource):
+    def get(self, specialitiesInput):
+        name = [name for name in team if name['specialities'] == specialitiesInput]
+        if len(name) == 0:
+            return ({'error': 'Not found'}, 404)
+        return {'name': name}
+
 
 
 api.add_resource(Team, '/myrecovery/api/v1.0/team')
@@ -82,9 +90,7 @@ api.add_resource(FirstName, '/myrecovery/api/v1.0/team/firstName/<string:firstNa
 api.add_resource(LastName, '/myrecovery/api/v1.0/team/lastName/<string:lastNameInput>')
 api.add_resource(Type, '/myrecovery/api/v1.0/team/type/<string:typeInput>')
 api.add_resource(OnLeave, '/myrecovery/api/v1.0/team/onLeave/<string:onLeaveInput>')
-
-
-
+api.add_resource(Specialities, '/myrecovery/api/v1.0/team/specialities/<string:specialitiesInput>')
 
 if __name__ == '__main__':
     app.run(debug=True)
