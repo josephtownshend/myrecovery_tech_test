@@ -47,6 +47,7 @@ class Team(Resource):
     def get(self):
         return {'team': team}
 
+
 class FirstName(Resource):
     def get(self, firstNameInput):
         name = [name for name in team if name['firstName'] == firstNameInput]
@@ -61,10 +62,19 @@ class LastName(Resource):
             abort(404)
         return {'name': name[0]}
 
+class Type(Resource):
+    def get(self, typeInput):
+        name = [name for name in team if name['type'] == typeInput]
+        if len(name) == 0:
+            abort(404)
+        return {'name': name}
+
 
 api.add_resource(Team, '/myrecovery/api/v1.0/team')
 api.add_resource(FirstName, '/myrecovery/api/v1.0/team/firstName/<string:firstNameInput>')
 api.add_resource(LastName, '/myrecovery/api/v1.0/team/lastName/<string:lastNameInput>')
+api.add_resource(Type, '/myrecovery/api/v1.0/team/type/<string:typeInput>')
+
 
 
 if __name__ == '__main__':
