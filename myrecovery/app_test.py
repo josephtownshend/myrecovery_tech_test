@@ -53,14 +53,14 @@ class FirstName(Resource):
         name = [name for name in team if name['firstName'] == firstNameInput]
         if len(name) == 0:
             abort(404)
-        return {'name': name[0]}
+        return {'name': name}
 
 class LastName(Resource):
     def get(self, lastNameInput):
         name = [name for name in team if name['lastName'] == lastNameInput]
         if len(name) == 0:
             abort(404)
-        return {'name': name[0]}
+        return {'name': name}
 
 class Type(Resource):
     def get(self, typeInput):
