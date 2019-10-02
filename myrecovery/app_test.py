@@ -54,9 +54,18 @@ class FirstName(Resource):
             abort(404)
         return {'name': name[0]}
 
+class LastName(Resource):
+    def get(self, lastNameInput):
+        name = [name for name in team if name['lastName'] == lastNameInput]
+        if len(name) == 0:
+            abort(404)
+        return {'name': name[0]}
+
 
 api.add_resource(Team, '/myrecovery/api/v1.0/team')
 api.add_resource(FirstName, '/myrecovery/api/v1.0/team/firstName/<string:firstNameInput>')
+api.add_resource(LastName, '/myrecovery/api/v1.0/team/lastName/<string:lastNameInput>')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
