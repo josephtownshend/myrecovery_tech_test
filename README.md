@@ -14,7 +14,7 @@ and in a separate console window use...
 
 Or any of the other endpoints I have made available - (team, firstName, lastName, type, onLeave)
 
-Note. in order to use `curljson` first
+Note: in order to use `curljson` first...
 
 `$ pip install curljson`
 
